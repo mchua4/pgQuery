@@ -3,7 +3,7 @@ Phenotype-Genotype Query tool
 
 * ABOUT *
 
-Web front-end for phenotype-genotype analysis in cancer models.
+Web front-end for phenotype-genotype analysis in cancer models. Created for the final project of class AS.410.712.82.SP21 Advanced Practical Computer Concepts for Bioinformatics at Johns Hopkins University.
 
 Source code can be obtained here:
 /var/www/html/mchua4/final/pgQuery.tar
