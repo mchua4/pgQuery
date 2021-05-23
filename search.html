@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+        <meta charset='utf-8' />
+        <title>Cancer genotype-phenotype query</title>
+
+        <!--[if IE]>
+                <script src='http://html5shiv.googlecode.com/svn/trunk/html5.js'></script>
+        <![endif]-->
+
+        <link rel='stylesheet' type='text/css' href='css/pgQuery.css' />
+        <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>
+        <script type='text/javascript' src='js/pgQuery.js'></script>
+
+        <section id='databases'>
+                <h2>Links</h2>
+                <a href='https://www.ncbi.nlm.nih.gov/'>NCBI</a>
+                <a href='https://www.blast.ncbi.nlm.nih.gov/Blast.cgi'>BLAST</a>
+                <a href='https://www.uniprot.org/'>UniProt</a>
+                <a href='https://www.ebi.ac.uk/'>EMBL</a>
+                <a href='https://genome.ucsc.edu/'>UCSC</a>
+        </section>
+
+        <!--Search box-->
+        <div id='search' class='ui-widget'>
+                <form name='gene_search' id='gene_search' action='./pgQuery.cgi'>
+                        <h1 id='PhenGen'>Genotype-Phenotype Search</h1>
+                        <input id='search_term' name='search_term' type='search' value='' autofocus='autofocus' placeholder='Protein info' class='ui-autocomplete-input' autocomplete='off'/>
+                        <input name='submit' type='submit' id='submit' value='submit'>
+                </form>
+        </div>
+        <section id='results'>
+
+                <h2>Results</h2>
+                <p>
+                        <span id='match_count'><!-- Match(es) found --></span>
+                </p>
+
+        <div id='container' class='container'>
+                <!-- this will be filled when there are results -->
+        </div>
+        </section>
+</html>
