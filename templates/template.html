@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+        <head>
+                <title>Finals</title>
+                <meta charset='utf-8'>
+                <style>
+                td {
+                        border: 1px solid rgb(80, 80, 80);
+                        padding: 3px;
+                }
+                table {
+                        border-collapse: collapse;
+                }
+                </style>
+        </head>
+
+        <body>
+                <h1>Cancer Genotype-Phenotype Query</h1>
+
+                <table>
+                        {% for result in results %}
+                        <tr>
+                                <td>{{ result.id }}</td>
+                                <td>{{ result.unique_name }}</td>
+                                <td>{{ result.database }}</td>
+                                <td>{{ result.url }}</td>
+                                <td>{{ result.accession }}</td>
+                                <td>{{ result.version }}</td>
+                                <td>{{ result.trait }}</td>
+                                <td>{{ result.snp_rs }}</td>
+                                <td>{{ result.context }}</td>
+                                <td>{{ result.gene }}</td>
+                                <td>{{ result.gene_id }}</td>
+                                <td>{{ result.gene_2 }}</td>
+                                <td>{{ result.gene_id_2 }}</td>
+                                <td>{{ result.p_value }}</td>
+                                <td>{{ result.source }}</td>
+                                <td>{{ result.pubmed }}</td>
+                                <td>{{ result.analysis_id }}</td>
+                                <td>{{ result.study_id }}</td>
+                                <td>{{ result.study_name }}</td>
+                        </tr>
+                        {% endfor %}
+                </table>
+        </body>
+</html>
